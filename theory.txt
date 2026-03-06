@@ -1,0 +1,5 @@
+HTML là gì
+
+HTML là viết tắt của từ Hyper Text Markup Language hay có cách gọi khác là ngôn ngữ đánh dấu siêu văn bản 
+HTML là ngôn ngữ dùng để tạo lên cấu trúc cho 1 website
+HTML thể hiện nội dung trên website qua các cặp thể đóng mở như thẻ <h1> </h1> ngoài ra còn có 1 số cặp thẻ tự đóng như thẻ img và cả 2 loại thể đó còn gọi là các element
