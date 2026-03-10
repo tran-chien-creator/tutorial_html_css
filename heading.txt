@@ -5,3 +5,5 @@ Là nhũng thẻ tiêu đề muốn hiểm thị trên trang web
 Bao gồm 6 thẻ tiêu đề chính từ h1 đến h6
 
 Và 1 trang web chỉ nên sử dụng duy nhất 1 thẻ h1
+
+Thẻ smal sẽ ăn theo css của thẻ cha và dùng để mô tả giải thích ngắn gọn cho tiêu đề
