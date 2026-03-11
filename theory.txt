@@ -1,9 +1,0 @@
-Khái niệm HTML 
-
-HTML là viết tắt của từ HyperText Markup Languega hay còn gọi là ngôn ngữ đánh dấu siêu văn bản
-
-HTML là ngôn ngữ dùng để tạo lên cấu trúc cho 1 website
-
-HTML thể hiện nội dung trên website thông qua các elements, mỗi element có thể là 1 cặp thẻ đóng và mở hoặc cũng có thể là 1 thẻ tự đóng
-
-1 file cấu trúc cơ bản của HTML bao gồm 1 thẻ DOCTYPE VÀ 1 THẺ html trong đo thẻ DOCTYPE dùng để khai báo cho trình duyệt biết mình đang dùng phiên bản html nào , trong thẻ html gồm 2 thẻ chính là thẻ head và thẻ body

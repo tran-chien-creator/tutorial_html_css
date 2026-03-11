@@ -1,7 +1,0 @@
-git init dùng để khởi tạo 1 local repository
-
-git remote add origin https:// dùng để kết nối với kho lưu trữ trung tâm center repository
-
-git checkout -b ten_nhanh dùng để tạo ra 1 nhánh mới
-
-git branch -D ten_nhanh dùng để xóa 1 nhánh 
