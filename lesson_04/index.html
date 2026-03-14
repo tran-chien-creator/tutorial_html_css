@@ -3,7 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HTML - Lists</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HTML - Lists -->
+    <h1>List - Unorderlist & Orderlist</h1>
+
+    <!-- Unorder list -->
+    <ul>
+      Danh sách không theo thứ tự:
+      <li>Kem</li>
+      <li>Dâu</li>
+      <li>Chocolate</li>
+    </ul>
+    <hr />
+    <!-- Order list -->
+    <ol>
+      Danh sách có thứ tự:
+      <li>Mở bài</li>
+      <li>Thân bài</li>
+      <li>Kết bài</li>
+    </ol>
+    <hr />
+    <!-- Describe list -->
+    <dl>
+      Danh sách theo kiểu mô tả:
+      <dt>Coffee</dt>
+      <dd>- Đen đá</dd>
+      <dd>- Bạc xỉu</dd>
+    </dl>
+    <hr />
+    <!-- Nested List & Styles List -->
+    <ul style="list-style-type: circle">
+      Danh sách lồng nhau không sắp xếp:
+      <li>
+        Cofee
+        <ul style="list-style-type: disc">
+          <li>Bucachino</li>
+          <li>G7</li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <ol type="I">
+      Danh sách lồng nhau có sắp xếp
+      <li>
+        Luộc trứng
+        <ol type="a" reversed>
+          <li>Rửa trứng</li>
+          <li>Cho trứng vào nồi</li>
+          <li>Bật bếp</li>
+          <li>Đợi 5p sau đó tắt bếp</li>
+        </ol>
+      </li>
+    </ol>
+  </body>
 </html>
