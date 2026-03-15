@@ -57,6 +57,21 @@
     <div class="group-class">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </div>
+    <hr />
+    <!-- HTML kết hợp JS -->
+
+    <!-- Sử dụng trực tiếp trong file HTML -->
+    <button type="button" onclick="alert('Thông báo')" class="button-alert">
+      Hiện thị hộp thoại thông báo
+    </button>
+
+    <div class="div_1">Hello</div>
+
+    <!-- Sử dụng trong cặp thẻ script -->
+    <script>
+      const a = document.getElementsByClassName("button-alert");
+      a[0].style.color = "red";
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
