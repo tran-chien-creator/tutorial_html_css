@@ -1,0 +1,28 @@
+.chien {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  margin: 0 auto;
+  text-align: center;
+  color: orange;
+}
+
+@media screen and (min-width: 640px) {
+  .chien {
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    color: yellowgreen;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .chien {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: turquoise;
+    border-radius: 10px;
+  }
+}
