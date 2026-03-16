@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - Head and Meta</title>
+    <title>HTML - Head and Meta - Iframe</title>
     <!-- <script></script> -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <!-- <style></style> -->
@@ -11,5 +11,42 @@
     <meta name="description" content="" />
     <meta name="keywords" content="HTML - Trần Quyết Chiến Basic" />
   </head>
-  <body></body>
+  <body>
+    <!-- HTML - Iframe -->
+    <h2>HTML - Iframe</h2>
+    <iframe
+      src="https://trungquandev.com/"
+      name="iframe_trungquandev"
+      width="1000px"
+      height="500px"
+      frameborder="0"
+    ></iframe>
+
+    <hr />
+    <a href="https://cv.trungquandev.com/" target="iframe_trungquandev"
+      >Thay đổi nội dung iframe có target name</a
+    >
+    <hr />
+    <iframe
+      width="600"
+      height="300"
+      src="https://www.youtube.com/embed/cDBLDTL4UFs?list=PLP6tw4Zpj-RK-A2xwiIKlVAXeO8TUxQCh"
+      title="22. HTML Iframe - Nhúng trang web để làm gì? | HTML CSS Master A-Z | TrungQuanDev"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+
+    <hr />
+  </body>
 </html>
