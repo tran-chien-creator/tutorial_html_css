@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - Form - Input Basic - Radio - Checkbox</title>
+    <title>
+      HTML - Form - Input Basic - Radio - Checkbox - Textarea - Select(option) -
+      Button(Submit & Reset)
+    </title>
   </head>
   <body>
     <!-- HTML - Input Basic -->
@@ -70,6 +73,44 @@
         </div>
         <div>
           <button type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- HTML - Textarea - Select(option) - Button(Submit & Reset) -->
+    <h2>HTML - Textarea - Select(option) - Button(Submit & Reset)</h2>
+    <form action="" name="resgister-form-3" method="get">
+      <div style="display: flex; flex-flow: column; gap: 20px">
+        <div>
+          <label for="username-3">Họ và tên</label>
+          <input
+            type="text"
+            name="username-3"
+            id="username-3"
+            placeholder="Trần Văn A"
+            required
+          />
+        </div>
+        <div>
+          <label for="address">Địa chỉ</label>
+          <select name="address" id="address" multiple>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Nam Định">Nam Định</option>
+          </select>
+        </div>
+        <div>
+          <label for="note">Ghi chú</label>
+          <textarea
+            name="note"
+            cols="30"
+            rows="3"
+            placeholder="Enter your note here"
+          >
+          </textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
         </div>
       </div>
     </form>
