@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - Form - Input Basic</title>
+    <title>HTML - Form - Input Basic - Radio - Checkbox</title>
   </head>
   <body>
     <!-- HTML - Input Basic -->
@@ -32,6 +32,44 @@
         </div>
         <div>
           <button type="submit">Resgister</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- HTML - Radio - Checkbox  -->
+    <h2>HTML - Radio - Checkbox</h2>
+    <form action="" name="resgister-form-2" method="post">
+      <div style="display: flex; flex-flow: column; gap: 20px">
+        <div>
+          <label for="username-2">Họ và tên</label>
+          <input
+            type="text"
+            name="username"
+            id="username-2"
+            placeholder="Trần Văn A"
+            required
+          />
+        </div>
+        <div>
+          <label for="gender">Giới tính</label>
+          <input type="radio" name="gender" value="Nam" id="male" />Nam
+          <input type="radio" name="gender" value="Nữ" id="female" />Nữ
+        </div>
+        <div>
+          <label for="hobbies">Sở thích</label>
+          <input type="checkbox" name="hobby" id="football" value="Đá bóng" />Đá
+          bóng
+          <input
+            type="checkbox"
+            name="hobby"
+            id="play-game"
+            value="Chơi game"
+          />Chơi game
+          <input type="checkbox" name="hobby" id="fishing" value="Câu cá" />Câu
+          cá
+        </div>
+        <div>
+          <button type="submit">Send</button>
         </div>
       </div>
     </form>
