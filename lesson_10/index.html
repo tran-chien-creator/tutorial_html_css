@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML - Form - Input Basic</title>
+    <title>
+      HTML - Form - Input Basic - Radio - Checkbox - Textarea - Select(option) -
+      Button(Submit & Reset) - Validation
+    </title>
   </head>
   <body>
     <!-- HTML - Input Basic -->
@@ -32,6 +35,96 @@
         </div>
         <div>
           <button type="submit">Resgister</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- HTML - Radio - Checkbox  -->
+    <h2>HTML - Radio - Checkbox</h2>
+    <form action="" name="resgister-form-2" method="post">
+      <div style="display: flex; flex-flow: column; gap: 20px">
+        <div>
+          <label for="username-2">Họ và tên</label>
+          <input
+            type="text"
+            name="username"
+            id="username-2"
+            placeholder="Trần Văn A"
+            required
+          />
+        </div>
+        <div>
+          <label for="gender">Giới tính</label>
+          <input type="radio" name="gender" value="Nam" id="male" />Nam
+          <input type="radio" name="gender" value="Nữ" id="female" />Nữ
+        </div>
+        <div>
+          <label for="hobbies">Sở thích</label>
+          <input type="checkbox" name="hobby" id="football" value="Đá bóng" />Đá
+          bóng
+          <input
+            type="checkbox"
+            name="hobby"
+            id="play-game"
+            value="Chơi game"
+          />Chơi game
+          <input type="checkbox" name="hobby" id="fishing" value="Câu cá" />Câu
+          cá
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- HTML - Textarea - Select(option) - Button(Submit & Reset) -->
+    <h2>HTML - Textarea - Select(option) - Button(Submit & Reset)</h2>
+    <form action="" name="resgister-form-3" method="get">
+      <div style="display: flex; flex-flow: column; gap: 20px">
+        <div>
+          <label for="username-3">Họ và tên</label>
+          <input
+            type="text"
+            name="username-3"
+            id="username-3"
+            placeholder="Trần Văn A"
+            required
+            minlength="10"
+          />
+        </div>
+        <div>
+          <label for="email-3">Email</label>
+          <input type="email" name="email-3" autocomplete="on" />
+        </div>
+        <div>
+          <label for="phone">Số điện thoại</label>
+          <input
+            type="tel"
+            required
+            pattern="^[0-9]{10}$"
+            title="Enter 10 digits"
+            name="email-3"
+          />
+        </div>
+        <div>
+          <label for="address">Địa chỉ</label>
+          <select name="address" id="address" multiple>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Nam Định">Nam Định</option>
+          </select>
+        </div>
+        <div>
+          <label for="note">Ghi chú</label>
+          <textarea
+            name="note"
+            cols="30"
+            rows="3"
+            placeholder="Enter your note here"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
         </div>
       </div>
     </form>
