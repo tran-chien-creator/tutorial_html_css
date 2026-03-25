@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS - External -->
     <link rel="stylesheet" href="style.css" />
-    <title>CSS - Inline - Internal - External</title>
+    <title>CSS - Inline - Internal - External - Box Model</title>
     <!-- CSS - Internal -->
     <style>
-      h2 {
-        color: aqua;
+      .box-model {
+        color: brown;
       }
       .internal {
         background-color: aqua;
+      }
+      hr {
+        height: 5px;
+        background-color: black;
       }
     </style>
   </head>
@@ -35,5 +39,23 @@
       pariatur harum, sed quas mollitia quia. Culpa, ea libero officia odit
       natus ipsam, eum unde corporis consequatur, expedita ex quos voluptate?
     </p>
+    <hr />
+    <!-- CSS - Box Model -->
+    <h2 class="box-model">CSS - Box Model</h2>
+    <div class="test-content-box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laboriosam
+      placeat accusamus totam cumque natus harum ab et praesentium vitae,
+      consequatur asperiores aspernatur aliquid, optio, dicta saepe nihil
+      architecto ipsa!
+    </div>
+    <div class="test-border-box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+        asperiores quae corrupti veniam animi vitae quaerat rem accusamus ipsum
+        nostrum harum exercitationem adipisci eligendi neque quasi, ratione
+        magnam cumque? Nostrum.
+      </p>
+    </div>
+    <p class="test-p">Hello</p>
   </body>
 </html>
