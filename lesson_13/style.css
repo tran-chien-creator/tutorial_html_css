@@ -35,7 +35,7 @@ p.first {
   /* Phân bổ đều khoảng cách và phần tử đầu và cuối sẽ sát lề
   justify-content: space-between; */
 
-  /* Phân bổ đều nhưng phần tử ngoài sẽ bằng 1/2 các khoảng cách ở giữ
+  /* Phân bổ đều nhưng phần tử ngoài sẽ bằng 1/2 các khoảng cách ở giữa
   justify-content: space-around; */
 
   /* Phân bổ đều khoảng cách */
