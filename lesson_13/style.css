@@ -12,12 +12,55 @@ p {
   background: radial-gradient(ellipse, green, yellow);
   /* opacity: 0.5; */
 }
-div {
-  width: 400px;
-  border: 1px solid red;
-}
 p.first {
   color: rgba(255, 0, 0, 1);
   text-indent: 20px;
   background: linear-gradient(to left, red, yellow);
+}
+
+.flex-box div {
+  background-color: gold;
+}
+.flex-box {
+  height: 200px;
+  display: flex;
+  gap: 10px;
+  background-color: aqua;
+
+  /* Main axis */
+
+  /* Căn giữa theo trục main axis*/
+  /* justify-content: center; */
+
+  /* Phân bổ đều khoảng cách và phần tử đầu và cuối sẽ sát lề
+  justify-content: space-between; */
+
+  /* Phân bổ đều nhưng phần tử ngoài sẽ bằng 1/2 các khoảng cách ở giữ
+  justify-content: space-around; */
+
+  /* Phân bổ đều khoảng cách */
+  /* justify-content: space-evenly; */
+
+  /* Căn phần tử về đầu trục chính main axis
+  justify-content: flex-start; */
+
+  /* Căn phần tử về cuối trục chính main axis */
+  /* justify-content: flex-end; */
+
+  /*Cross axis */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  align-items: baseline;
+
+  /* Direction đổi hướng trục */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  /* Flex wrap */
+  /* Order */
+  /* align-self */
+  /* align-content */
 }
