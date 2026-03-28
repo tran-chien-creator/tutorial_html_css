@@ -63,4 +63,7 @@ p.first {
   /* Order */
   /* align-self */
   /* align-content */
+  /* flex-grow:chia trọng số chiếm */
+  /* flex-shrink: khả năng co giãn */
+  /* flex-basic: chiều rộng của phần tử */
 }
