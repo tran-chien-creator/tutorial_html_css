@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+/* Header */
+.header {
+  background-color: #fffcf4;
+}
+.main {
+  max-width: 1170px;
+}
+.container {
+  padding-top: 32px;
+  padding-left: 132px;
+  display: flex;
+}
