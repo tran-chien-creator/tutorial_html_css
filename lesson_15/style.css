@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+.grid-box {
+  background-color: yellow;
+}
+
+.box-1,
+.box-3,
+.box-5 {
+  background-color: aqua;
+}
+
+.box-2,
+.box-4,
+.box-6 {
+  background-color: brown;
+}
+
+.box {
+  /* height: 50px; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.grid-box {
+  display: grid;
+  height: 500px;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(5, 100px);
+  gap: 10px;
+
+  /* Căm chỉnh nội dung trong lưới */
+
+  /* Căn nội dung bên trong */
+  /* align-items: center; */
+  /* justify-items: center; */
+
+  /* Căn cả khối chứa nội dung */
+  align-content: center;
+  justify-content: space-between;
+
+  /* Trọng số
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 4fr; */
+
+  /* Chia theo auto 
+  grid-template-columns: 100px auto;
+  grid-template-rows: 100px auto; */
+
+  /* Chia theo minmax
+  grid-template-columns: minmax(100px, 200px); */
+
+  /* Định vị vị trí cho phần tử trong lưới */
+}
+.box-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box-2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+.box-3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.box-4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+/* Dùng tên và vị trí để tạo giao diện */
+.container {
+  margin-top: 100px;
+  display: inline-grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header-1 header-1 header-1"
+    "header header main main sidebar"
+    "footer footer main main sidebar-1";
+}
+.box1,
+.box3,
+.box5 {
+  background-color: gold;
+}
+.box1 {
+  grid-area: header;
+}
+.box2 {
+  grid-area: header-1;
+}
+.box3 {
+  grid-area: main;
+}
+.box4 {
+  grid-area: footer;
+}
+.box5 {
+  grid-area: sidebar;
+}
+.box6 {
+  grid-area: sidebar-1;
+}
