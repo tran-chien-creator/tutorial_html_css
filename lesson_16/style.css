@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  border: 1px solid black;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+.cart__title {
+}
+.cart__desc {
+  display: inline-block;
+}
+
+.cart__button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart__button--primary button {
+  background-color: red;
+}
