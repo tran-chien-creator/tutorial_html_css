@@ -1,0 +1,50 @@
+body {
+  /* width: 200px;
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* @media (min-width: 600px) and (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+} */
+/* Screen Mobile
+@media screen and (min-width: 319px) and (max-width: 479.98px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* Ipad and table */
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  body {
+    background-color: none;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1200px) and (max-width: 1599.98px) {
+  body {
+    background-color: none;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 1600px) {
+  body {
+    background-color: none;
+  }
+}
+
+/* Hàm min max clamp */
+.container {
+  background-color: cyan;
+  /* width: min(100%, 800px); */
+  /* width: max(100%, 200px); */
+
+  font-size: clamp(18px, 2vw, 24px);
+}
