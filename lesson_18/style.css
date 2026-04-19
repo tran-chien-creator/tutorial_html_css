@@ -1,0 +1,35 @@
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border: none;
+  cursor: pointer;
+  transition: 0.2ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 0.5s; */
+
+  /* Khoảng thời gian chuyển đổi */
+  transition-duration: 0.5s;
+
+  /* Chỉ định thuộc tính sẽ chuyển đổi */
+  /* transition-property: background-color, color; */
+
+  /* Chỉ định thời gian delay trước khi chuyển đổi */
+  /* transition-delay: 1s; */
+
+  /* Xác định giá trị */
+  transition-timing-function: linear;
+
+  /* Shorthand */
+  /* transition:
+    background-color linear 0.5ms 1s,
+    color linear 0.5ms 1s; */
+}
+
+.container:hover {
+  color: yellow;
+  background-color: brown;
+  opacity: 0%;
+}
