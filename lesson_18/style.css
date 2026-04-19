@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .container {
   width: 100px;
   height: 100px;
@@ -52,7 +55,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 .header {
   color: white;
@@ -82,4 +85,39 @@ body {
 
 .header__heading {
   color: black;
+}
+
+.container--cart-list {
+  margin-top: 300px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cart-item {
+  display: flex;
+  flex-direction: column;
+}
+.cart-item__image {
+  background-image: url("assets/images/Ninh_Bình.jpg");
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cart-item__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* số dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cart-item__button {
+  margin: 0 auto;
+}
+.cart-item__button--primary {
+  background-color: rgb(250, 242, 4);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50px;
 }
