@@ -114,11 +114,51 @@
   animation: spin_element 2s ease-in-out 1s infinite;
 }
 
+.loading-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 400px;
+}
+
+.spiner {
+  --size: 200px;
+  --first-color: blue;
+  --second-color: yellow;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  animation: spin-element 2s ease-in-out infinite;
+}
+
+.spiner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  translate: -50% -50%;
+  border: 20px solid var(--first-color);
+  border-top-color: var(--second-color);
+  border-radius: 50%;
+  animation: spin 2s ease-in-out infinite;
+}
+
 @keyframes spin_element {
   from {
     rotate: 0deg;
   }
   to {
+    rotate: 360deg;
+  }
+}
+@keyframes spin {
+  0% {
+    rotate: 0;
+  }
+  100% {
     rotate: 360deg;
   }
 }
