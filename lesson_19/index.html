@@ -13,6 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <style>
+      [data-aos] {
+        visibility: hidden;
+      }
+      [data-aos].animate__animated {
+        visibility: visible;
+      }
+    </style>
   </head>
   <body>
     <!-- <div class="box">Test Animation</div>
@@ -28,27 +36,28 @@
     </div>
 
     <!-- Library AOS -->
-    <div data-aos="zoom-out" class="test-aos"></div>
+    <div data-aos="animate__animated animate__zoomIn" class="test-aos"></div>
 
     <!-- Animate CDN -->
-    <div
-      class="heading animate__animated animate__rubberBand animate__delay-2s"
-    >
+    <div class="heading" data-aos="animate__animated animate__rubberBand">
       How it works
     </div>
-
     <!-- Script Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Áp dụng chung cho toàn bộ AOS -->
     <script>
       AOS.init({
+        // Animate
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
         // delay: 1000,
-        // offset: 200,
+        offset: 0,
         // duration: 400,
         // easing: "linear",
         once: false,
         mirror: false,
-        anchorPlacement: "top-bottom",
+        // anchorPlacement: "top-bottom",
       });
     </script>
   </body>
