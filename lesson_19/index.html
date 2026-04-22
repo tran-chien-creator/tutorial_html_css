@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS - Animation</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- <div class="box">Test Animation</div>
@@ -18,5 +20,24 @@
     <div class="loading-2">
       <div class="spiner">Loading...</div>
     </div>
+
+    <!-- Library AOS -->
+
+    <div data-aos="zoom-out" class="test-aos"></div>
+
+    <!-- Script Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Áp dụng chung cho toàn bộ AOS -->
+    <script>
+      AOS.init({
+        // delay: 1000,
+        // offset: 200,
+        // duration: 400,
+        // easing: "linear",
+        once: false,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
   </body>
 </html>

@@ -162,3 +162,11 @@
     rotate: 360deg;
   }
 }
+
+/* AOS */
+.test-aos {
+  width: 200px;
+  height: 200px;
+  background-color: chocolate;
+  margin-top: 50px;
+}
